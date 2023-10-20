@@ -1,0 +1,20 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: devfile-sample-laht
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: devfile-sample-laht
+    app.kubernetes.io/part-of: ci1t-830-0017-app
+  name: devfile-sample-lahtyw8n
+spec:
+  path: /
+  port:
+    targetPort: 3001
+  to:
+    kind: Service
+    name: devfile-sample-laht
+    weight: null
+status: {}

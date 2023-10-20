@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-laht
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/stonesoup_perfscale/ci1t-830-0017-tenant/ci1t-830-0017-app/devfile-sample-laht@sha256:75d9f8c9790c091374e1651a42c6109db5bd6601aa0e0f09be87a1fdd9243116
+        name: my-nodejs
+        resources: {}
+status: {}
